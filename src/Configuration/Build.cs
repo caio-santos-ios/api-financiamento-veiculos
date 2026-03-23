@@ -31,6 +31,7 @@ namespace api_financiamento.src.Configuration
             string? SecretKey = Environment.GetEnvironmentVariable("SECRET_KEY") ?? "";
             string? Issuer = Environment.GetEnvironmentVariable("ISSUER") ?? "";
             string? Audience = Environment.GetEnvironmentVariable("AUDIENCE") ?? "";
+            System.Console.WriteLine($"KEY: {SecretKey}");
 
             builder.Services.AddAuthentication(options =>
             {

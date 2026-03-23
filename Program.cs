@@ -1,6 +1,9 @@
 using api_financiamento.src.Configuration;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Env.Load();
 
 builder.AddBuilderConfiguration();
 builder.AddBuilderAuthentication();
