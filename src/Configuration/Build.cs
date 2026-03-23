@@ -66,7 +66,7 @@ namespace api_financiamento.src.Configuration
             builder.Services.AddTransient<ISimulationService, SimulationService>();
             builder.Services.AddTransient<ISimulationRepository, SimulationRepository>();
 
-            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            // builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
     }
 }
